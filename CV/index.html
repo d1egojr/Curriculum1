@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script> 
+    <script src="https://kit.fontawesome.com/33dd9e0c2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+<div class="container fondos p-5" >  
+    <div class="row">
+        <div class="col-md-4">
+            <h1 id="nombre" onmouseover="style.color='yellow'" onmouseout="style.color='black'">Mr. DUANE WEBB</h1>
+            <h2 class="text-start" onmouseover="style.color='blue'" onmouseout="style.color='dimgrey'">Gerente Sucursal</h2>
+        </div>
+        <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Foto de perfil" class="rounded" id="foto">
+        </div>
+        <div class="col-md-4">
+            <address><i class="fa-solid fa-location-dot"></i> 5929 Stanley Road<br>
+                Preston, Derbyshire United Kingdom<br>
+                <br>
+                <i class="fa-solid fa-phone"></i> Phone: 015242 32659<br>
+                <i class="fa-solid fa-mobile"></i> Cell: 07033 166018<br>
+                <br>
+                <i class="fa-solid fa-envelope"></i> Email: <a href="mailto:duane.webb@example.com" title="Enviar mail">duane.webb@example.com</a><br>
+                <i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/duane-webb" target="_blank" title="Ir a LinkedIn">Duane Webb</a>
+            </address>
+        </div>
+    </div>
+</div>
+</header>
+
+<main>
+<div class="container" >  
+
+    <div class="row">
+        <div class="col-md-4" id="fondo">
+            <hr>
+                <h4>PERFIL PROFESIONAL</h4>
+                    <p>Vivamus id metus id nunc vestibulum scelerisque. Curabitur eu suscipit arcu. Nunc nunc massa, mattis vitae sodales sed, imperdiet non lorem. Pellentesque porta semper orci, sed ornare eros sodales in. Morbi sed leo mattis urna elementum convallis. Suspendisse potenti. Vestibulum ac enim nulla. Proin vitae facilisis arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;.</p>
+            <hr>
+                 <h4>HABILIDADES</h4>
+                    <ul>    
+                        <li>Cras nec leo sed arcu venenatis.</li>
+                        <li>Donec luctus justo eget.</li>
+                        <li>Praesent nec nulla ac purus feugiat.</li>
+                        <li>Nulla dictum mi et tortor.</li>
+                        <li>Etiam eget eros mollis, imperdiet elit.</li>
+                    </ul>
+            <hr>
+                <h4>IDIOMAS</h4>
+                    <p>Inglés: Idioma Nativo</p>
+                    <br>
+                    <p>Francés: <button type="button" onclick="nivelFrances()">Ver</button></p>
+                    <div class="progress" style="height:10px">
+                        <div class="progress-bar" style="width:75%;height:10px;display:none" id="frances">75%</div>
+                    </div>
+                    <p id="nivelfran" style="display:none">Intermedio Avanzado</p> 
+                    <br>
+                    <p>Alemán: <button type="button" onclick="nivelAleman()">Ver</button></p>
+                    <div class="progress" style="height:10px">
+                        <div class="progress-bar" style="width:50%;height:10px;display:none" id="aleman">50%</div>
+                    </div>   
+                    <p id="nivelale" style="display:none">Intermedio</p>
+                    
+        </div> 
+
+        <div class="col-md-8 principal">
+            <hr>
+                <h4>EXPERIENCIA LABORAL</h4>
+                    <h5>Gerente de Sucursal<br>
+                        Mac. Industries - London
+                    </h5>
+                        <h6>03/2019 al presente</h6>
+                            <ul>
+                                <li>Etiam eget eros mollis, imperdiet elit iaculis, rutrum nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Aenean gravida eget sem in molestie. Suspendisse at diam diam. Vivamus tortor elit. Praesent vitae augue convallis, dignissim nunc non, venenatis lorem.</li>
+                            </ul>
+
+                    <h5>Gerente de Ventas<br>
+                        South Company - Manchester
+                    </h5>
+                        <h6> 10/2016 - 02/2019 </h6>
+                            <ul>
+                                <li>Nunc metus mi, iaculis quis finibus quis, scelerisque in nibh. Quisque at erat blandit, lacinia diam nec, placerat augue.</li>
+                                <li>Donec sollicitudin nisi eu libero tempus lobortis. Nam scelerisque quam tellus, vitae tristique dolor gravida eget.</li>
+                            </ul>
+    
+            <hr>
+                <h4>FORMACION ACADEMICA</h4>
+                    <h5>Praesent vitae augue convallis</h5>
+                         <h6>2014 - 2016</h6>
+                            <p>Donec a lorem eros. Morbi commodo orci non rutrum semper. Praesent vitae augue convallis, dignissim nunc non, venenatis lorem. Nunc tempus sapien massa, sit amet vehicula risus fermentum sed.</p>
+
+                    <h5>Curabitur tincidunt vitae arcu at luctus</h5>
+                        <h6>2009 - 2014</h6>
+                             <p>Morbi egestas fringilla felis a condimentum. Curabitur tincidunt vitae arcu at luctus. Vivamus varius vestibulum lacus ut tristique. <br>
+                                Mauris cursus at diam vel pharetra. Suspendisse at diam diam. Aenean bibendum pretium tellus, a semper dolor mattis sit amet.</p>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+<div class="container fondos p-3" >  
+
+    <div class="row">
+        <div class="col-md-4">
+            <p class="text-start"><b>Mr. Duane Webb</b></p>
+        </div>
+        <div class="col-md-4">
+            <p class="text-center"><i class="fa-solid fa-mobile"></i> Cell: 07033 166018</p>
+        </div>
+        <div class="col-md-4">
+            <p class="text-end"><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:duane.webb@example.com" title="Enviar mail">duane.webb@example.com</a></p>
+        </div>
+    </div>
+</div>
+</footer>
+
+<script src="javascript.js"></script>
+
+<!--Comenzé utilizando tabulaciones para indentar, y ya estando muy adelantado advertí que no es una buena práctica en Html-->
+
+</body>
+</html>

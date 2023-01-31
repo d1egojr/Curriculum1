@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Parse</title>
+</head>
+<body>
+    <p id="correo"></p>
+
+    <script> 
+        const persona = {"results":[{"gender":"male",
+                                    "name":{"title":"Mr","first":"Duane","last":"Webb"},
+
+                                    "location":{"street":{"number":5929,"name":"Stanley Road"},"city":"Preston",
+                                    "state":"Derbyshire","country":"United Kingdom","postcode":"IT74 0FB",
+                                    "coordinates":{"latitude":"-7.2669","longitude":"-87.5273"},
+                                    "timezone":{"offset":"+3:30","description":"Tehran"}},
+
+                                    "email":"duane.webb@example.com",
+
+                                    "login":{"uuid":"f99cb4da-f9f7-49b3-91e3-2a9460385bea","username":"beautifultiger301",
+                                    "password":"avatar","salt":"O8M9DJQo","md5":"1c731bdda6f8bc0bbae0e8b9cb91c188",
+                                    "sha1":"7f079858862eeebabbaf2b726fc89f8a64dbe100",
+                                    "sha256":"8c0bb07cbc30b8858dae6f6d0327b9a47472b17fde0d1c05bbaa6a2b2902a3f0"},
+                                    
+                                    "dob":{"date":"1954-07-25T10:50:37.657Z","age":68},
+
+                                    "registered":{"date":"2015-09-15T12:33:22.304Z","age":7},
+
+                                    "phone":"015242 32659","cell":"07033 166018",
+
+                                    "id":{"name":"NINO","value":"YY 49 57 52 U"},
+
+                                    "picture":{"large":"https://randomuser.me/api/portraits/men/60.jpg",
+                                    "medium":"https://randomuser.me/api/portraits/med/men/60.jpg",
+                                    "thumbnail":"https://randomuser.me/api/portraits/thumb/men/60.jpg"},
+                                    
+                                    "nat":"GB"}],
+                                    
+                        "info":{"seed":"083a729afb7d2c47","results":1,"page":1,"version":"1.4"}}
+
+        const obj = JSON.parse(persona);
+        console.log(obj);
+
+        document.getElementById("correo").innerHTML = obj.results[0];
+
+        /*
+        No supe resolver este código. Mi intención era usar el json parsiado para colocar los datos personales en el encabezado.
+        */
+
+    </script>
+
+    
+</body>
+</html>
